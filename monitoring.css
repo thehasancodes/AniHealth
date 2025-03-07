@@ -1,0 +1,184 @@
+/* monitoring.css */
+.animal-list {
+    flex: 1;
+    min-width: 300px;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-bar input,
+.filter-bar select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.animal-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.animal-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.animal-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animal-card.alert {
+    border-left: 5px solid #d32f2f;
+}
+
+.animal-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.animal-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.status-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.vital-signs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.vital {
+    text-align: center;
+}
+
+.vital i {
+    color: #4caf50;
+}
+
+.vital.alert i {
+    color: #d32f2f;
+}
+
+.view-details-btn,
+.emergency-action-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-details-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.emergency-action-btn {
+    background: #d32f2f;
+    color: white;
+}
+
+.health-dashboard {
+    flex: 2;
+    min-width: 300px;
+}
+
+.panel {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.select-prompt {
+    color: #666;
+    text-align: center;
+}
+
+.animal-details.hidden {
+    display: none;
+}
+
+.detail-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.vitals-chart {
+    margin: 1rem 0;
+}
+
+.chart-container {
+    position: relative;
+    height: 200px;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.detail-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.detail-card ul {
+    list-style: none;
+}
+
+.detail-card ul li {
+    margin: 0.5rem 0;
+}
+
+.detail-card ul li span:first-child {
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.action-buttons button {
+    flex: 1;
+    padding: 0.8rem;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background: #388e3c;
+}

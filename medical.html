@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniHealth - Medical Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="medical.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cow"></i>
+            <h1>AniHealth</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="monitoring.html">Health Monitoring</a></li>
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="medical.html" class="active">Medical Help</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="te">অসমীয়া</option>
+            </select>
+            <button id="emergency-btn" class="emergency-btn">
+                <i class="fas fa-ambulance"></i> Emergency
+            </button>
+            <button id="login-btn">
+                <i class="fas fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="medical" class="section">
+            <h2>AI-Powered Health Checkups & Veterinary Services</h2>
+            <div class="section-content">
+                <div class="health-services-tabs">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="checkup">AI Health Checkup</button>
+                        <button class="tab-btn" data-tab="emergency">Emergency Care</button>
+                        <button class="tab-btn" data-tab="chatbot">AI Chatbot</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="checkup" class="tab-pane active">
+                            <div class="symptom-checker">
+                                <h3>AI Symptom Checker</h3>
+                                <p>Answer questions to get an AI-powered health assessment.</p>
+                                <div class="animal-selector">
+                                    <label>Select Animal Type:</label>
+                                    <select id="animal-type">
+                                        <option>Cow</option>
+                                        <option>Goat</option>
+                                        <option>Poultry</option>
+                                    </select>
+                                    <label>Animal ID (optional):</label>
+                                    <input type="text" placeholder="Enter tag number or ID">
+                                </div>
+                                <div class="symptom-questions">
+                                    <div class="question">
+                                        <p>What symptoms have you noticed?</p>
+                                        <div class="checkbox-group">
+                                            <label><input type="checkbox"> Fever</label>
+                                            <label><input type="checkbox"> Lethargy</label>
+                                            <label><input type="checkbox"> Diarrhea</label>
+                                        </div>
+                                    </div>
+                                    <button id="analyze-symptoms" class="primary-btn">
+                                        <i class="fas fa-stethoscope"></i> Analyze Symptoms
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tele-vet">
+                                <h3>Consult a Veterinarian</h3>
+                                <div class="vet-options">
+                                    <button class="vet-option">
+                                        <i class="fas fa-video"></i>
+                                        <span>Video Consultation</span>
+                                    </button>
+                                    <button class="vet-option">
+                                        <i class="fas fa-comment-medical"></i>
+                                        <span>Chat Consultation</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="emergency" class="tab-pane">
+                            <div class="emergency-services">
+                                <h3>Emergency Veterinary Services</h3>
+                                <div class="emergency-options">
+                                    <button class="emergency-option urgent">
+                                        <i class="fas fa-phone"></i>
+                                        <span>Call Emergency Vet</span>
+                                    </button>
+                                    <button class="emergency-option">
+                                        <i class="fas fa-ambulance"></i>
+                                        <span>Request Mobile Vet</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chatbot" class="tab-pane">
+                            <div class="chatbot-interface">
+                                <div class="chatbot-header">
+                                    <i class="fas fa-robot"></i>
+                                    <h3>AI Livestock Health Assistant</h3>
+                                </div>
+                                <div class="chat-container">
+                                    <div class="chat-messages">
+                                        <div class="message bot">
+                                            <div class="message-content">
+                                                <p>Hello! How can I assist you today?</p>
+                                            </div>
+                                            <div class="message-time">Now</div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-input">
+                                        <input type="text" placeholder="Type your question...">
+                                        <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <i class="fas fa-cow"></i>
+                    <h1>AniHealth</h1>
+                </div>
+                <p>Empowering farmers with AI-powered livestock healthcare.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="monitoring.html">Health Monitoring</a></li>
+                    <li><a href="weather.html">Weather Insights</a></li>
+                    <li><a href="medical.html">Medical Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765-43210</li>
+                    <li><i class="fas fa-envelope"></i> support@AniHealth.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AniHealth by X0R CORE | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

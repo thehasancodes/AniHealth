@@ -1,0 +1,124 @@
+/* medical.css */
+.health-services-tabs {
+    flex: 1;
+}
+
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tab-btn.active {
+    background: #4caf50;
+    color: white;
+}
+
+.tab-pane {
+    display: none;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.symptom-checker,
+.tele-vet,
+.emergency-services,
+.chatbot-interface {
+    margin-bottom: 1rem;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+.primary-btn {
+    background: #4caf50;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vet-options,
+.emergency-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.vet-option,
+.emergency-option {
+    flex: 1;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.emergency-option.urgent {
+    background: #d32f2f;
+    color: white;
+}
+
+.chat-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.message {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.message.bot .message-content {
+    background: #e8f5e9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.send-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

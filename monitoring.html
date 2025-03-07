@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniHealth - Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="monitoring.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cow"></i>
+            <h1>AniHealth</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="monitoring.html" class="active">Health Monitoring</a></li>
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="medical.html">Medical Help</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="te">অসমীয়া</option>
+            </select>
+            <button id="emergency-btn" class="emergency-btn">
+                <i class="fas fa-ambulance"></i> Emergency
+            </button>
+            <button id="login-btn">
+                <i class="fas fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="monitoring" class="section">
+            <h2>Smart Livestock Health Monitoring</h2>
+            <div class="section-content">
+                <div class="animal-list">
+                    <div class="filter-bar">
+                        <input type="text" placeholder="Search animals...">
+                        <select>
+                            <option>All Animals</option>
+                            <option>Cows</option>
+                            <option>Goats</option>
+                        </select>
+                    </div>
+                    <div class="animal-cards">
+                        <div class="animal-card">
+                            <div class="animal-header">
+                                <img src="33.jpg" alt="Cow">
+                                <div>
+                                    <h3>Lakshmi</h3>
+                                    <p>Holstein Cow • ID: COW-001</p>
+                                </div>
+                                <span class="status-indicator healthy"></span>
+                            </div>
+                            <div class="vital-signs">
+                                <div class="vital">
+                                    <i class="fas fa-heartbeat"></i>
+                                    <p>72 BPM</p>
+                                </div>
+                                <div class="vital">
+                                    <i class="fas fa-temperature-high"></i>
+                                    <p>38.6°C</p>
+                                </div>
+                                <div class="vital">
+                                    <i class="fas fa-walking"></i>
+                                    <p>Normal</p>
+                                </div>
+                            </div>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                        <div class="animal-card alert">
+                            <div class="animal-header">
+                                <img src="66.jpg" alt="Goat">
+                                <div>
+                                    <h3>Ramu</h3>
+                                    <p>Black Bengal Goat • ID: GT-042</p>
+                                </div>
+                                <span class="status-indicator critical"></span>
+                            </div>
+                            <div class="vital-signs">
+                                <div class="vital alert">
+                                    <i class="fas fa-heartbeat"></i>
+                                    <p>92 BPM</p>
+                                </div>
+                                <div class="vital alert">
+                                    <i class="fas fa-temperature-high"></i>
+                                    <p>40.1°C</p>
+                                </div>
+                                <div class="vital">
+                                    <i class="fas fa-walking"></i>
+                                    <p>Lethargic</p>
+                                </div>
+                            </div>
+                            <button class="emergency-action-btn">Take Action</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="health-dashboard">
+                    <div id="animal-details-panel" class="panel">
+                        <h3>Animal Health Details</h3>
+                        <p class="select-prompt">Select an animal to view detailed health information</p>
+                        <div class="animal-details hidden">
+                            <div class="detail-header">
+                                <img src="33.jpg" alt="Animal">
+                                <div>
+                                    <h3>Lakshmi</h3>
+                                    <p>Holstein Cow • Female • 4 years</p>
+                                    <p>ID: COW-001 • Tag: IoT-34765</p>
+                                </div>
+                            </div>
+                            <div class="vitals-chart">
+                                <h4>Vital Signs - 24 Hour Trend</h4>
+                                <div class="chart-container">
+                                    <canvas id="vitalsChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="detail-grid">
+                                <div class="detail-card">
+                                    <h4>Current Vitals</h4>
+                                    <ul>
+                                        <li><span>Temperature:</span> 38.6°C</li>
+                                        <li><span>Heart Rate:</span> 72 BPM</li>
+                                        <li><span>Activity Level:</span> Normal</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-card">
+                                    <h4>Health History</h4>
+                                    <ul class="history-list">
+                                        <li><span class="date">12 Feb 2025</span><span class="event">Vaccination - FMD</span></li>
+                                        <li><span class="date">24 Jan 2025</span><span class="event">Deworming</span></li>
+                                    </ul>
+                                    <button class="view-all-btn">View Full History</button>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button><i class="fas fa-stethoscope"></i> Health Check</button>
+                                <button><i class="fas fa-video"></i> Consult Vet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <i class="fas fa-cow"></i>
+                    <h1>AniHealth</h1>
+                </div>
+                <p>Empowering farmers with AI-powered livestock healthcare.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="monitoring.html">Health Monitoring</a></li>
+                    <li><a href="weather.html">Weather Insights</a></li>
+                    <li><a href="medical.html">Medical Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765-43210</li>
+                    <li><i class="fas fa-envelope"></i> support@AniHealth.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AniHealth by X0R CORE | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

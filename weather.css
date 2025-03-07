@@ -1,0 +1,82 @@
+/* weather.css */
+.weather-forecast {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.current-conditions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-icon i {
+    font-size: 3rem;
+    color: #ffeb3b;
+}
+
+.weather-metrics {
+    display: flex;
+    gap: 1rem;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric i {
+    color: #4caf50;
+}
+
+.weather-alert {
+    background: #fff3e0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #ff9800;
+}
+
+.forecast-days {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.climate-recommendations {
+    flex: 2;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recommendation-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.recommendation-icon i {
+    font-size: 1.5rem;
+    color: #4caf50;
+}

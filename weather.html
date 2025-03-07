@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniHealth - Weather Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cow"></i>
+            <h1>AniHealth</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="monitoring.html">Health Monitoring</a></li>
+                <li><a href="weather.html" class="active">Weather Insights</a></li>
+                <li><a href="medical.html">Medical Help</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="te">অসমীয়া</option>
+            </select>
+            <button id="emergency-btn" class="emergency-btn">
+                <i class="fas fa-ambulance"></i> Emergency
+            </button>
+            <button id="login-btn">
+                <i class="fas fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="weather" class="section">
+            <h2>AI-Driven Weather & Climate Health Recommendations</h2>
+            <div class="section-content">
+                <div class="weather-forecast">
+                    <div class="current-conditions">
+                        <div class="weather-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="weather-details">
+                            <h3>Current Conditions</h3>
+                            <div class="weather-metrics">
+                                <div class="metric"><i class="fas fa-temperature-high"></i><p>32°C</p></div>
+                                <div class="metric"><i class="fas fa-tint"></i><p>68%</p></div>
+                                <div class="metric"><i class="fas fa-wind"></i><p>8 km/h</p></div>
+                            </div>
+                            <div class="weather-alert warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <p>Heat stress risk for livestock - Take precautions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast-days">
+                        <div class="forecast-day">
+                            <h4>Today</h4>
+                            <i class="fas fa-sun"></i>
+                            <p class="temp">32°C / 24°C</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h4>Tomorrow</h4>
+                            <i class="fas fa-cloud-sun"></i>
+                            <p class="temp">30°C / 23°C</p>
+                        </div>
+                        <div class="forecast-day">
+                            <h4>Saturday</h4>
+                            <i class="fas fa-cloud-rain"></i>
+                            <p class="temp">27°C / 21°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="climate-recommendations">
+                    <h3>AI Recommendations</h3>
+                    <div class="recommendation-cards">
+                        <div class="recommendation-card">
+                            <div class="recommendation-icon"><i class="fas fa-tint"></i></div>
+                            <div class="recommendation-content">
+                                <h4>Hydration</h4>
+                                <p>Provide electrolyte supplements and ensure fresh water access.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-card">
+                            <div class="recommendation-icon"><i class="fas fa-home"></i></div>
+                            <div class="recommendation-content">
+                                <h4>Shelter</h4>
+                                <p>Keep animals in shaded areas during peak sun hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <i class="fas fa-cow"></i>
+                    <h1>AniHealth</h1>
+                </div>
+                <p>Empowering farmers with AI-powered livestock healthcare.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="monitoring.html">Health Monitoring</a></li>
+                    <li><a href="weather.html">Weather Insights</a></li>
+                    <li><a href="medical.html">Medical Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765-43210</li>
+                    <li><i class="fas fa-envelope"></i> support@AniHealth.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AniHealth by X0R CORE | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

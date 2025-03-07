@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniHealth - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cow"></i>
+            <h1>AniHealth</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="monitoring.html">Health Monitoring</a></li>
+                <li><a href="weather.html">Weather Insights</a></li>
+                <li><a href="medical.html">Medical Help</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="te">অসমীয়া</option>
+            </select>
+            <button id="emergency-btn" class="emergency-btn">
+                <i class="fas fa-ambulance"></i> Emergency
+            </button>
+            <button id="login-btn">
+                <i class="fas fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" class="section">
+            <div class="dashboard">
+                <div class="welcome-banner">
+                    <div class="welcome-text">
+                        <h2>Welcome, Farmer!</h2>
+                        <p>Your livestock health dashboard is ready. Monitor your animals, get AI-powered insights, and access veterinary help all in one place.</p>
+                    </div>
+                    <div class="quick-actions">
+                        <button id="add-animal-btn"><i class="fas fa-plus"></i> Add Animal</button>
+                        <button id="scan-tag-btn"><i class="fas fa-tag"></i> Scan Tag</button>
+                        <button id="chat-ai-btn"><i class="fas fa-robot"></i> Chat with AI</button>
+                    </div>
+                </div>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3>Total Animals</h3>
+                        <p class="stat-value">47</p>
+                        <p class="stat-change positive"><i class="fas fa-arrow-up"></i> 2 new</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Health Status</h3>
+                        <p class="stat-value"><span class="status-circle healthy"></span> 43 Healthy</p>
+                        <p class="stat-value"><span class="status-circle attention"></span> 3 Need Attention</p>
+                        <p class="stat-value"><span class="status-circle critical"></span> 1 Critical</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Today's Weather</h3>
+                        <div class="weather-display">
+                            <i class="fas fa-sun"></i>
+                            <p>32°C</p>
+                            <p>Humidity: 68%</p>
+                        </div>
+                        <p class="alert"><i class="fas fa-exclamation-triangle"></i> Heat stress risk</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Alerts</h3>
+                        <p class="stat-value">4 <i class="fas fa-bell"></i></p>
+                        <button class="view-all-btn">View All</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <i class="fas fa-cow"></i>
+                    <h1>AniHealth</h1>
+                </div>
+                <p>Empowering farmers with AI-powered livestock healthcare.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="monitoring.html">Health Monitoring</a></li>
+                    <li><a href="weather.html">Weather Insights</a></li>
+                    <li><a href="medical.html">Medical Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 98765-43210</li>
+                    <li><i class="fas fa-envelope"></i> support@AniHealth.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AniHealth by xAI | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
